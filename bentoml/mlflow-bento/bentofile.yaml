@@ -1,0 +1,8 @@
+service: "service:classification"  # Same as the argument passed to bentoml
+labels:
+  owner: janebhop
+  stage: dev
+include:
+  - "*.py"  # A pattern for matching which files to include in the bento
+python:
+   requirements_txt: ./requirements.txt
